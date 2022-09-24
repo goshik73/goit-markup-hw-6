@@ -456,7 +456,7 @@
           </address>
         </div>
         <div class="join">
-          <h2 class="footer-title">Приєднуйтесь</h2>
+          <h3 class="footer-title">Приєднуйтесь</h3>
           <ul class="join-list list">
             <li class="join-item">
               <a href="" class="link">
@@ -494,11 +494,70 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <h3 class="footer-title">Підпишіться на розсилку</h3>
+          <form>
+            <label for="email" class="subscribe-label">
+              <input
+                class="subscribe-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              Підписатися
+              <svg class="telegram-icon">
+                <use href="./image/studio/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="form-field">
+            <label for="name"> Ім'я<input type="text" name="name" /></label>
+          </div>
+          <div class="form-field">
+            <label for="tel"
+              >Телефон
+              <input type="tel" name="tel" />
+            </label>
+          </div>
+          <div class="form-field">
+            <label for="mail"
+              >Пошта
+              <input type="email" name="email" />
+            </label>
+          </div>
+          <div class="form-field">
+            <label for="comment"
+              >Коментар
+              <textarea
+                class="comment"
+                name="comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+          <label class="checkbox-lable">
+            <input
+              class="checkbox-icon"
+              type="checkbox"
+              name="checkbox"
+            /><span></span
+            ><span class="checkbox-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="accept-link" href="">Умови договору</a></span
+            >
+          </label>
+          <button class="modal-btn" type="submit">Відправити</button>
+        </form>
         <button data-modal-close class="close-button">
           <svg class="close-icon">
             <use href="./image/studio/symbol-defs.svg#icon-Vector"></use>
